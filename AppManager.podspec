@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'AppManager'
   s.version          = '0.1.0'
-  s.summary          = 'Some useful code collection for speeding up app development.'
+  s.summary          = 'App manager for iOS app development.'
+  s.swift_versions = ['5.0']
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,7 +31,7 @@ Some useful code collection for speeding up app development.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AppManager/Source/**/*'
+  s.source_files = 'AppManager/Sources/**/*'
   
   # s.resource_bundles = {
   #   'AppManager' => ['AppManager/Assets/*.png']

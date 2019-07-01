@@ -25,7 +25,7 @@ Some useful code collection for speeding up app development.
   s.homepage         = 'https://github.com/xinus/AppManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xinus' => 'xinus.wang@gmail.com' }
+  s.author           = { 'Xinus' => 'xinus.wang@gmail.com' }
   s.source           = { :git => 'https://github.com/xinus/AppManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AppManager
 //
-//  Created by xinus on 07/01/2019.
-//  Copyright (c) 2019 xinus. All rights reserved.
+//  Created by Xinus on 07/01/2019.
+//  Copyright (c) 2019 XINUS.WANG. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    internal func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

@@ -2,11 +2,12 @@
 //  ViewController.swift
 //  AppManager
 //
-//  Created by xinus on 07/01/2019.
-//  Copyright (c) 2019 xinus. All rights reserved.
+//  Created by Xinus on 07/01/2019.
+//  Copyright (c) 2019 XINUS.WANG. All rights reserved.
 //
 
 import UIKit
+import AppManager
 
 class ViewController: UIViewController {
 

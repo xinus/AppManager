@@ -9,8 +9,12 @@
 import Foundation
 import UIKit
 
-public struct Popover: ComponentType, Sharable {
+public class Popover: ComponentType, Sharable {
     public static let shared = Popover()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

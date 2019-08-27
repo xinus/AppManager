@@ -9,8 +9,12 @@
 import Foundation
 import UIKit
 
-public struct Alert: ComponentType, Sharable {
+public class Alert: ComponentType, Sharable {
     public static let shared = Alert()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

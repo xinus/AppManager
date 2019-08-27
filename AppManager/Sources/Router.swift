@@ -8,8 +8,12 @@
 
 import Foundation
 
-public struct Router: ComponentType, Sharable {
+public class Router: ComponentType, Sharable {
     public static let shared = Router()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

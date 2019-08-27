@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'AppManager'
   s.version          = '0.1.0'
   s.summary          = 'App manager for iOS app development.'
-  s.swift_versions = ['5.0']
+  s.swift_versions   = ['5.0']
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -33,11 +33,27 @@ Some useful code collection for speeding up app development.
 
   s.source_files = 'AppManager/Sources/**/*'
   
-  # s.resource_bundles = {
-  #   'AppManager' => ['AppManager/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'AppManager' => ['AppManager/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  
+  # Dependency - Crypto
+  s.dependency 'CryptoSwift'
+  
+  # Dependency - Keychain
+  s.dependency 'KeychainSwift'
+  
+  # Dependency - Logger
+  s.dependency 'CocoaLumberjack/Swift'
+  
+  # Dependency - Network
+  s.dependency 'Moya/RxSwift'
+
+  # Dependency - Utility
+  s.dependency 'SwifterSwift'
+  s.dependency 'RxCocoa'
+
 end

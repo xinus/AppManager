@@ -9,8 +9,12 @@
 import Foundation
 import UIKit
 
-public struct Toast: ComponentType, Sharable {
+public class Toast: ComponentType, Sharable {
     public static let shared = Toast()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

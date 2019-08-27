@@ -1,5 +1,5 @@
 //
-//  Sharable.swift
+//  Constants.swift
 //  AppManager
 //
 //  Created by Xinus on 07/01/2019.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-protocol Sharable {
-    associatedtype Component
-    
-    static var shared : Component { get }
+public enum GradientDirection {
+    case leftToRight
+    case rightToLeft
+    case topToBottom
+    case bottomToTop
 }

@@ -8,8 +8,12 @@
 
 import Foundation
 
-public struct Preference: ComponentType, Sharable {
+public class Preference: ComponentType, Sharable {
     public static let shared = Preference()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

@@ -8,8 +8,12 @@
 
 import Foundation
 
-public struct Cache: ComponentType, Sharable {
+public class Cache: ComponentType, Sharable {
     public static let shared = Cache()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

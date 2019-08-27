@@ -8,8 +8,12 @@
 
 import Foundation
 
-public struct Profile: ComponentType, Sharable {
+public class Profile: ComponentType, Sharable {
     public static let shared = Profile()
+    
+    private init() {
+        
+    }
 }
 
 public extension AppManager {

@@ -126,9 +126,11 @@ extension Logger {
             return
         }
         
+        let thread = Thread.current
+        
         let now = Date()
         let filePath = URL(fileURLWithPath: file)
-        print("[\(level.mark)] \(now) <\(filePath.lastPathComponent)#\(function)#line:\(line)> \(message())")
+        print("[\(level.mark)] \(now) <\(filePath.lastPathComponent)#\(function)#line:\(line)#\(thread.isMainThread ? "Main" : "Worker")> \(message())")
     }
 }
 

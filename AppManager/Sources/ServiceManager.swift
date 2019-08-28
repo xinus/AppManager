@@ -12,8 +12,48 @@ import UIKit
 public class ServiceManager: ComponentType, Sharable {
     public static let shared = ServiceManager()
     
+    var services: [ServiceType] = []
+    
     private init() {
         
+    }
+}
+
+extension ServiceManager: AppObserverType {
+    public func applicationDidFinishLaunchingWithOptions(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
+        services.forEach { (service) in
+            service.applicationDidFinishLaunchingWithOptions(launchOptions: launchOptions)
+        }
+    }
+    
+    public func applicationWillResignActive() {
+        services.forEach { (service) in
+            service.applicationWillResignActive()
+        }
+    }
+    
+    public func applicationDidEnterBackground() {
+        services.forEach { (service) in
+            service.applicationDidEnterBackground()
+        }
+    }
+    
+    public func applicationWillEnterForeground() {
+        services.forEach { (service) in
+            service.applicationWillEnterForeground()
+        }
+    }
+    
+    public func applicationDidBecomeActive() {
+        services.forEach { (service) in
+            service.applicationDidBecomeActive()
+        }
+    }
+    
+    public func applicationWillTerminate() {
+        services.forEach { (service) in
+            service.applicationWillTerminate()
+        }
     }
 }
 

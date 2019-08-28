@@ -46,9 +46,6 @@ Some useful code collection for speeding up app development.
   # Dependency - Keychain
   s.dependency 'KeychainSwift'
   
-  # Dependency - Logger
-  s.dependency 'CocoaLumberjack/Swift'
-  
   # Dependency - Network
   s.dependency 'Moya/RxSwift'
 

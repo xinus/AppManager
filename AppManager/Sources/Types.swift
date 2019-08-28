@@ -8,15 +8,33 @@
 
 import Foundation
 
-protocol ComponentType {
+public protocol ComponentType {
     
 }
 
-protocol ServiceType: ComponentType {
+public protocol AppObserverType {
+    func applicationDidFinishLaunchingWithOptions(launchOptions: [UIApplication.LaunchOptionsKey: Any]?)
+    func applicationWillResignActive()
+    func applicationDidEnterBackground()
+    func applicationWillEnterForeground()
+    func applicationDidBecomeActive()
+    func applicationWillTerminate()
+}
+
+public protocol ServiceType: ComponentType, AppObserverType {
     
 }
 
-protocol Sharable {
+extension ServiceType {
+    func applicationDidFinishLaunchingWithOptions(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {}
+    func applicationWillResignActive() {}
+    func applicationDidEnterBackground() {}
+    func applicationWillEnterForeground() {}
+    func applicationDidBecomeActive() {}
+    func applicationWillTerminate() {}
+}
+
+public protocol Sharable {
     associatedtype Component
     
     static var shared : Component { get }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppManager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'App manager for iOS app development.'
   s.swift_versions   = ['5.0']
 
@@ -33,9 +33,9 @@ Some useful code collection for speeding up app development.
 
   s.source_files = 'AppManager/Sources/**/*'
   
-  s.resource_bundles = {
-    'AppManager' => ['AppManager/Assets/*.png']
-  }
+  # s.resource_bundles = {
+  #   'AppManager' => ['AppManager/Assets/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
@@ -57,7 +57,6 @@ Some useful code collection for speeding up app development.
 
   # Dependency - Utility
   s.dependency 'SwifterSwift', '~> 5.0.0'
-  s.dependency 'Codextended', '~> 0.3.0'
   
   # Dependency - Rx
   s.dependency 'RxCocoa', '~> 4.5.0'

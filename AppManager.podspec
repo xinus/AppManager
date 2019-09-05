@@ -41,31 +41,31 @@ Some useful code collection for speeding up app development.
   s.frameworks = 'UIKit'
   
   # Dependency - Crypto
-  s.dependency 'CryptoSwift'
+  s.dependency 'CryptoSwift', '~> 1.0.0'
   
   # Dependency - Keychain
-  s.dependency 'KeychainSwift'
+  s.dependency 'KeychainSwift', '~> 16.0.1'
   
   # Dependency - Network
-  s.dependency 'Moya/RxSwift'
+  s.dependency 'Moya/RxSwift', '~> 13.0.1'
   
   # Dependency - Router
-  s.dependency 'URLNavigator'
+  s.dependency 'URLNavigator', '~> 2.2.0'
   
   # Dependency - IoC
-  s.dependency 'Swinject'
+  s.dependency 'Swinject', '~> 2.7.0'
 
   # Dependency - Utility
-  s.dependency 'SwifterSwift'
-  s.dependency 'Codextended'
+  s.dependency 'SwifterSwift', '~> 5.0.0'
+  s.dependency 'Codextended', '~> 0.3.0'
   
   # Dependency - Rx
-  s.dependency 'RxCocoa'
+  s.dependency 'RxCocoa', '~> 4.5.0'
   
   # Dependency - Social Network
-  s.dependency 'MonkeyKing'
+  s.dependency 'MonkeyKing', '~> 1.15.0'
   
   # Dependency - Logger
-  s.dependency 'CocoaLumberjack/Swift'
+  s.dependency 'CocoaLumberjack/Swift', '~> 3.5.3'
 
 end

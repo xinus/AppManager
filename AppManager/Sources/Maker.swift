@@ -2,7 +2,7 @@
 //  Maker.swift
 //  AppManager
 //
-//  Created by Xinus on 2019/7/27.
+//  Created by Xinus on 07/27/2019.
 //  Copyright (c) 2019 XINUS.WANG. All rights reserved.
 //
 

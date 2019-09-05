@@ -48,9 +48,24 @@ Some useful code collection for speeding up app development.
   
   # Dependency - Network
   s.dependency 'Moya/RxSwift'
+  
+  # Dependency - Router
+  s.dependency 'URLNavigator'
+  
+  # Dependency - IoC
+  s.dependency 'Swinject'
 
   # Dependency - Utility
   s.dependency 'SwifterSwift'
+  s.dependency 'Codextended'
+  
+  # Dependency - Rx
   s.dependency 'RxCocoa'
+  
+  # Dependency - Social Network
+  s.dependency 'MonkeyKing'
+  
+  # Dependency - Logger
+  s.dependency 'CocoaLumberjack/Swift'
 
 end

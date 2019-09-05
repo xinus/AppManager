@@ -2,7 +2,7 @@
 //  Network.swift
 //  AppManager
 //
-//  Created by Xinus on 8/26/2019.
+//  Created by Xinus on 08/26/2019.
 //  Copyright (c) 2019 XINUS.WANG. All rights reserved.
 //
 

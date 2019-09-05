@@ -22,7 +22,8 @@ public protocol AppObserverType {
 }
 
 public protocol ServiceType: ComponentType, AppObserverType {
-    
+    var name: String { get }
+    var version: String { get }
 }
 
 extension ServiceType {

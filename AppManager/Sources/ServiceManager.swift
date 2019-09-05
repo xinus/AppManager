@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 public class ServiceManager: ComponentType, Sharable {
     public static let shared = ServiceManager()
@@ -15,7 +14,12 @@ public class ServiceManager: ComponentType, Sharable {
     var services: [ServiceType] = []
     
     private init() {
-        
+        self.register(AppMonitorService())
+    }
+    
+    public func register(_ service: ServiceType) {
+        appMgr.logger.info("Register: \(service.name), ver: \(service.version)")
+        services.append(service)
     }
 }
 
